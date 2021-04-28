@@ -11,7 +11,6 @@ export class LearnPipeComponent implements OnInit {
   address = Promise.resolve("123 Pham Nhu Xuong");
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

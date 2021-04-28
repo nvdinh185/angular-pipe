@@ -1,4 +1,18 @@
 <h1>This is {{ title }}</h1>
 <!-- <app-learn-pipe></app-learn-pipe> -->
-<p>{{ 1.9 | roundNum : true : 10 }}</p>
-<p>{{ 3.5 | roundNum : false : 1 }}</p>
+<!-- <p>{{ 1.9 | roundNum : true : 10 }}</p> -->
+<!-- <p>{{ 3.5 | roundNum : false : 1 }}</p> -->
+<p [innerHtml]="linkGoogle | newLine | linkify"></p>
+
+<div *ngIf="(linkDantri | linkify:'urlInfos')?.length>0">
+    <div *ngFor="let urlInfo of linkDantri | linkify:'urlInfos'">
+        <p [innerHtml]="urlInfo.content | newLine"></p>
+        <img src="{{ urlInfo.image }}" />
+    </div>
+</div>
+
+<p>{{ number1 | chanLe }}</p>
+<p>{{ number2 | chanLe }}</p>
+
+<input type="text" value="{{ number1 | chanLe }}" />
+<input type="text" [value]="number2 | chanLe" />

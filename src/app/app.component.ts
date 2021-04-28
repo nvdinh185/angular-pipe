@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AppComponent';
+  linkGoogle: string = "Thương binh và Xã hội \n Tổng biên tập \n https://www.google.com.vn";
+  linkDantri = "https://dantri.com.vn/";
+
+  number1: number = 1;
+  number2: number = 2;
 }
