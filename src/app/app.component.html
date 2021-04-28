@@ -13,6 +13,9 @@
 
 <p>{{ number1 | chanLe }}</p>
 <p>{{ number2 | chanLe }}</p>
+<p>{{ url | linkUrl }}</p>
 
 <input type="text" value="{{ number1 | chanLe }}" />
 <input type="text" [value]="number2 | chanLe" />
+
+<p [innerHtml]="url | linkUrl"></p>

@@ -9,6 +9,7 @@ import { LinkifyPipe } from './pipes/linkify.pipe';
 import { ApiAuthService } from './services/apiAuthService';
 import { HttpClientModule } from '@angular/common/http';
 import { ChanLePipe } from './pipes/chan-le.pipe';
+import { LinkUrlPipe } from './pipes/link.url.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChanLePipe } from './pipes/chan-le.pipe';
     LearnPipeComponent,
     NewLinePipe,
     LinkifyPipe,
-    ChanLePipe
+    ChanLePipe,
+    LinkUrlPipe
   ],
   imports: [
     BrowserModule,
