@@ -10,16 +10,20 @@ import { ApiAuthService } from './services/apiAuthService';
 import { HttpClientModule } from '@angular/common/http';
 import { ChanLePipe } from './pipes/chan-le.pipe';
 import { LinkUrlPipe } from './pipes/link.url.pipe';
+import { TimeAgoPipe } from 'time-ago-pipe';
+import { IconTypePipe } from './pipes/icon-type.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TimeAgoPipe,
     RoundPipe,
     LearnPipeComponent,
     NewLinePipe,
     LinkifyPipe,
     ChanLePipe,
-    LinkUrlPipe
+    LinkUrlPipe,
+    IconTypePipe
   ],
   imports: [
     BrowserModule,

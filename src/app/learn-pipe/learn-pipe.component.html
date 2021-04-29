@@ -4,3 +4,5 @@
 <p>{{ birthday | date : "shortTime"}}</p><!-- Sử dụng pipe date với tham số shortTime để transform dữ liệu kiểu Date -->
 <p>{{ person | json | uppercase }}</p><!-- Sử dụng pipe json... Có thể sử dụng các pipe liên tiếp nhau -->
 <p>{{ address | async }}</p><!-- Dùng pipe async để transform dữ liệu kiểu Promise sang kiểu string -->
+
+<p>{{ 1619427276200 | timeAgo }}</p>
