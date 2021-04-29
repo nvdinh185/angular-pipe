@@ -14,4 +14,9 @@ export class AppComponent {
 
   number1: number = 1;
   number2: number = 2;
+  info: any;
+
+  getInfo(data) {
+    this.info = data;
+  }
 }

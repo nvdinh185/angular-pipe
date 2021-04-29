@@ -4,9 +4,12 @@
 <!-- <p>{{ 3.5 | roundNum : false : 1 }}</p> -->
 <p [innerHtml]="linkGoogle | newLine | linkify"></p>
 
-<div *ngFor="let urlInfo of linkDantri | linkify:'urlInfos'">
-    <p [innerHtml]="urlInfo.content | newLine"></p>
-    <img src="{{ urlInfo.image }}" />
+<p>{{ getInfo(linkDantri | linkify:'urlInfos') }}</p>
+<div *ngIf="info?.length>0">
+    <div *ngFor="let urlInfo of info">
+        <p [innerHtml]="urlInfo.content | newLine"></p>
+        <img src="{{ urlInfo.image }}" />
+    </div>
 </div>
 
 <p>{{ number1 | chanLe }}</p>
